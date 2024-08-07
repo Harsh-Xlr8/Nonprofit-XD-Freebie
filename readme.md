@@ -28,7 +28,7 @@ Nonprofit XD Freebie is a website template designed for nonprofits aiming to com
 ![Project Screenshot2](./screenshots/Screenshot%202024-08-07%20at%202.39.00%20PM.png)
 
 ## Links
-- [Live Site URL](https://columnspreview.netlify.app/)
+- [Live Site URL](https://responsive-website-xd.netlify.app/)
 
 ## Getting Started
 
