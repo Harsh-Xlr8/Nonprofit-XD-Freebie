@@ -1,0 +1,805 @@
+:root {
+  --Primary-color: rgb(53, 68, 99);
+  --secondary-color: rgb(193, 247, 213);
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: komet;
+  src: url("../fonts/Komet.otf") format("opentype");
+}
+@font-face {
+  font-family: floodstd;
+  src: url("../fonts/floodstd.otf") format("opentype");
+}
+@font-face {
+  font-family: PoynterOS;
+  src: url("../fonts/PoynterOSDisp-Bold.ttf");
+}
+body {
+  font-family: komet, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* header section css */
+
+header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  color: var(--Primary-color);
+  grid-gap: 1rem 2rem;
+}
+header > div:nth-child(3) {
+  grid-area: 2 / 1 / 3 / 3;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-button {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--Primary-color);
+  border: none;
+  height: 2.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.main-button:hover {
+  color: var(--secondary-color);
+  background-color: var(--Primary-color);
+}
+header h1 {
+  font-size: 1.5rem;
+  font-family: PoynterOS;
+}
+
+/* hero section css */
+
+.hero-section {
+  background-image: url("../images/home/annie-spratt-135307-unsplash.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position-x: right;
+  background-size: cover;
+  padding: 5rem 0;
+}
+.hero-section-div {
+  padding: 0 10px;
+  height: -webkit-fill-available;
+}
+.hero-title {
+  width: 65%;
+  margin-bottom: 2rem;
+}
+.hero-title h1 {
+  font-family: floodstd;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #fff;
+}
+.hero-description {
+  color: var(--Primary-color);
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem 2.5rem;
+  position: relative;
+}
+.title-div {
+  color: #fff;
+  border: none;
+  width: 45%;
+  max-width: 12rem;
+  background-color: var(--Primary-color);
+  position: absolute;
+  left: 27%;
+  top: -12%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-description h1 {
+  font-family: PoynterOS;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+.hero-description a {
+  color: inherit;
+  font-size: 13px;
+}
+
+/* take action styles */
+
+.take-action-section {
+  background-color: var(--secondary-color);
+  color: var(--Primary-color);
+  position: relative;
+}
+.take-action-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem 2rem;
+  grid-gap: 1.5rem;
+}
+.take-action-section .title-div {
+  left: 30%;
+  top: -6%;
+}
+
+/* what we do section css */
+
+.what-we-do-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: var(--Primary-color);
+  color: #fff;
+}
+.title2-div {
+  width: 40%;
+  height: 3rem;
+  background-color: #fff;
+  color: var(--Primary-color);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 185px;
+}
+.what-we-do-section > div:nth-child(2) {
+  padding: 1rem;
+  font-size: 15px;
+  line-height: 1.2;
+  margin-bottom: 5rem;
+}
+.what-we-do-card {
+  background-color: #fff;
+  color: var(--Primary-color);
+  padding: 1rem;
+  position: relative;
+  min-height: 10rem;
+  margin: 6rem 0;
+}
+.what-we-do-card img {
+  width: 100%;
+  height: 15rem;
+}
+.what-we-do-card > div:nth-child(1) {
+  position: relative;
+  top: -60px;
+  left: 0;
+}
+.what-we-do-card h3 {
+  position: relative;
+  top: -20px;
+}
+.what-we-do-card p {
+  margin: 0px 1rem;
+}
+.what-we-do-card .main-button {
+  margin-top: 2rem;
+  width: 45%;
+  font-size: large;
+  height: 3rem;
+}
+
+/* climate hunger css */
+
+.climate-hunger-section {
+  background-image: url("../images/home/did-you-know-background.png");
+  background-size: cover;
+  padding: 3rem 1rem;
+}
+.climate-hunger-section h1 {
+  font-family: floodstd;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #fff;
+}
+.climate-hunger-section > div:nth-child(1) {
+  padding-right: 8rem;
+}
+.climate-hunger-section .main-button {
+  width: 60%;
+}
+.climate-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+  position: relative;
+}
+.climate-card {
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: var(--Primary-color);
+}
+.climate-card > div:nth-child(1) {
+  width: 80%;
+  font-size: 20px;
+}
+.climate-card > div:nth-child(2) {
+  width: 80%;
+  order: 1;
+}
+.climate-card-container .title-div {
+  top: -25px;
+}
+.twitter-circle {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../images/home/iconmonstr-twitter-1.png");
+  background-repeat: no-repeat;
+  background-color: var(--secondary-color);
+  background-position: 50% 50%;
+  background-size: 16px 13px;
+  border-radius: 50%;
+}
+.fb-circle {
+  order: 2;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../images/home/iconmonstr-facebook-1.png");
+  background-repeat: no-repeat;
+  background-color: var(--secondary-color);
+  background-position: 50% 50%;
+  background-size: 8px 16px;
+  border-radius: 50%;
+}
+
+/* testimonial section css*/
+
+.testimonial-section {
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+.testimonial-section > div:nth-child(1) {
+  position: relative;
+  height: 25rem;
+  background-image: url("../images/home/lady-baby.png");
+  background-size: cover;
+}
+.testimonial-section > div:nth-child(2) {
+  background-color: var(--Primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 3rem;
+  line-height: 1.3;
+}
+.testimonial-section > div:nth-child(2) > div:nth-child(1) {
+  margin-bottom: 2rem;
+}
+.testimonial-section .title-div {
+  top: -8%;
+}
+.testimonial-section .main-button {
+  width: 50%;
+}
+
+/* home updates section title */
+
+.home-updates-section {
+  background-color: var(--Primary-color);
+  padding: 4rem 2rem 1rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+.home-updates-section-title {
+  width: 85%;
+  font-family: floodstd;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #fff;
+  margin: 0 auto;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.event-div {
+  margin-bottom: 5rem;
+}
+.event-div > div:nth-child(1) {
+  background-image: url("../images/home/tree-planting.png");
+  background-size: cover;
+  height: 25rem;
+}
+.event-div2 > div:nth-child(2) {
+  margin: 3rem 0;
+}
+.event-div2 > div:nth-child(4) {
+  width: 50%;
+  margin: 3rem auto;
+}
+.event-div2 .title-div {
+  display: none;
+}
+.event-div #meeting {
+  background-image: url("../images/home/meeting.png");
+  background-size: cover;
+  height: 25rem;
+}
+.home-updates-section .title-div {
+  position: relative;
+  background-color: #fff;
+  color: var(--Primary-color);
+  top: -6%;
+}
+
+/* newsletter signup section css */
+
+.newsletter-signup-section {
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--Primary-color);
+}
+.newsletter-signup-section h1 {
+  line-height: 1.2;
+  font-size: 29px;
+}
+.newsletter-signup-section .main-button {
+  background-color: var(--Primary-color);
+  color: var(--secondary-color);
+  width: 30%;
+}
+.newsletter-signup-section > div:nth-child(2) {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.newsletter-signup-section > div:nth-child(2) input {
+  border: none;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  width: 65%;
+  font-size: 16px;
+}
+footer {
+  background-color: #fff;
+  color: var(--Primary-color);
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
+  justify-items: flex-start;
+  align-items: center;
+  position: relative;
+}
+footer a {
+  color: var(--Primary-color);
+}
+footer > div:nth-child(1) {
+  font-size: 11px;
+  padding-right: 5rem;
+}
+footer > div:nth-child(2),
+footer > div:nth-child(3),
+footer > div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+}
+footer > div:nth-child(5) {
+  font-family: floodstd;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: var(--Primary-color);
+  grid-area: 3 / 2 / 4 / 3;
+  position: relative;
+  left: -30px;
+}
+
+/******************************************* for tablet **********************************************/
+
+@media (min-width: 768px) {
+  header > div:nth-child(3) {
+    grid-area: 1 / 2 / 3/ 3;
+  }
+  .main-button {
+    width: 50%;
+  }
+  .hero-title {
+    margin-bottom: 5rem;
+    padding-left: 3rem;
+  }
+  .hero-description {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .title-div {
+    left: 10%;
+  }
+  .hero-description h1 {
+    font-size: 2rem;
+  }
+  .hero-description a {
+    font-size: 1rem;
+  }
+  .take-action-section .title-div {
+    left: 37%;
+  }
+  .title2-div {
+    margin: 0 1rem 0 2.5rem;
+  }
+  .what-we-do-section > div:nth-child(2) {
+    margin-left: 1.5rem;
+    text-align: left;
+  }
+  .what-we-do-card {
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+  }
+  .what-we-do-card > div:nth-child(1) {
+    width: 45%;
+  }
+  .what-we-do-card h3 {
+    margin: 2rem 0;
+    font-size: 25px;
+  }
+  .what-we-do-card p {
+    margin: 0;
+  }
+  .what-we-do-card > div:nth-child(2) {
+    width: 50%;
+    text-align: left;
+    padding: 0 1rem;
+  }
+  .what-we-do-card > div:nth-child(3) {
+    width: 50%;
+    position: relative;
+    top: -38px;
+    text-align: right;
+    right: 30px;
+  }
+  .what-we-do-card .main-button {
+    margin: 0;
+  }
+  .climate-hunger-section {
+    display: flex;
+  }
+  .climate-hunger-section h1 {
+    font-size: 2.5rem;
+  }
+  .climate-hunger-section > div:nth-child(1) {
+    padding-right: 0;
+    padding-top: 4rem;
+  }
+  .testimonial-section {
+    padding: 6rem;
+    position: relative;
+    gap: 0;
+  }
+  .testimonial-section > div:nth-child(1) {
+    height: 35rem;
+  }
+  .testimonial-section > div:nth-child(2) {
+    position: relative;
+    top: -70px;
+    left: 55px;
+  }
+  .event-div {
+    display: flex;
+    gap: 4rem;
+  }
+  .event-div > div:nth-child(1) > .title-div {
+    display: none;
+  }
+  .event-div2 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .event-div2 > div:nth-child(4) {
+    width: 100%;
+    margin: 3rem 0;
+  }
+  .event-div2 .title-div {
+    display: flex;
+    top: 0;
+    left: 0;
+  }
+  .event-div > div:nth-child(1) {
+    flex-basis: 250%;
+  }
+  .event-div-meeting {
+    flex-direction: row-reverse;
+  }
+  .home-updates-section-title {
+    text-align: left;
+    margin-left: 0;
+  }
+  .newsletter-signup-section > div:nth-child(1) {
+    width: 70%;
+  }
+  .newsletter-signup-section > div:nth-child(2) {
+    height: 3rem;
+  }
+  .newsletter-signup-section .main-button {
+    height: 3rem;
+  }
+  footer {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 16px;
+  }
+  footer > div:nth-child(1) {
+    font-size: 14px;
+  }
+  footer > div:nth-child(4) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  footer > div:nth-child(5) {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+}
+@media (min-width: 1024px) {
+  header > div:nth-child(2) ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  header h1 {
+    margin: 0 10rem 0 3rem;
+  }
+  .testimonial-section > div:nth-child(1) {
+    min-width: 40rem;
+  }
+}
+
+/***************************************************** for desktop ******************************************************/
+
+@media (min-width: 1280px) {
+  header {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  header > div:nth-child(3) {
+    grid-area: 1 / 3 / 2/ 4;
+  }
+  header h1 {
+    margin: 0 3rem;
+  }
+  header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header > div:nth-child(2) ul {
+    width: 100%;
+    font-size: 18px;
+    justify-content: space-around;
+  }
+  .main-button {
+    width: 60%;
+  }
+  .hero-section {
+    height: 42rem;
+  }
+  .hero-section-div {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .hero-description {
+    width: 40%;
+    height: 80%;
+    margin-left: 5rem;
+  }
+  .title-div {
+    top: -6%;
+  }
+  .hero-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-title h1 {
+    font-size: 4rem;
+    padding: 1rem 14rem;
+  }
+  .take-action-section .title-div {
+    left: 43%;
+  }
+  .take-action-grid {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 4rem 6rem;
+    grid-gap: 1.5rem;
+    font-size: 20px;
+  }
+  .what-we-do-section > div:nth-child(2) {
+    margin-left: 2.5rem;
+  }
+  .what-we-do-section .title2-div {
+    margin-left: 4rem;
+  }
+  .what-we-do-card {
+    display: block;
+    height: auto;
+    text-align: left;
+    padding: 2rem 1rem;
+  }
+  .what-we-do-card-container {
+    display: flex;
+    gap: 10rem;
+    padding: 0 4rem;
+  }
+  .what-we-do-card > div:nth-child(2) {
+    width: 94%;
+    margin-left: 1rem;
+    padding: 0;
+  }
+  .what-we-do-card > div:nth-child(3) {
+    padding: 0;
+    left: 18px;
+    width: 100%;
+    text-align: left;
+    top: 10px;
+  }
+
+  .what-we-do-card > div:nth-child(1) {
+    position: relative;
+    left: 40px;
+    width: 100%;
+  }
+  .what-we-do-card h3 {
+    margin: 0;
+    font-size: 30px;
+  }
+  .what-we-do-card p {
+    position: relative;
+    top: -10px;
+  }
+  .climate-hunger-section {
+    justify-content: space-around;
+  }
+  .climate-card {
+    width: 80%;
+    height: 15rem;
+  }
+  .climate-hunger-section h1 {
+    font-size: 4rem;
+  }
+  .climate-card > div:nth-child(1) {
+    font-size: 35px;
+  }
+  .climate-card > div:nth-child(2) {
+    font-size: 20px;
+  }
+  .twitter-circle,
+  .fb-circle {
+    width: 3rem;
+    height: 3rem;
+  }
+  .climate-hunger-section > div:nth-child(1) {
+    padding: 4rem 2rem 0 5rem;
+  }
+  .climate-hunger-section .main-button {
+    width: 30%;
+    margin-top: 5rem;
+  }
+  .climate-card-container {
+    gap: 6rem;
+  }
+  .testimonial-section {
+    flex-wrap: wrap;
+    height: 40rem;
+    padding-left: 1%;
+    justify-content: space-between;
+  }
+  .testimonial-section > div:nth-child(1) {
+    order: 1;
+    width: 32%;
+  }
+  .testimonial-section > div:nth-child(2) {
+    width: 34rem;
+    left: 12%;
+    top: 12%;
+    z-index: 1;
+  }
+  .testimonial-section > div:nth-child(3) {
+    width: 42%;
+    text-align: center;
+    margin-left: 1rem;
+  }
+  .event-div > div:nth-child(1) {
+    flex-basis: 155%;
+    height: auto;
+  }
+  .event-div2 {
+    font-size: 20px;
+    padding-right: 5rem;
+  }
+  .event-div #meeting {
+    height: auto;
+  }
+  .home-updates-section {
+    padding: 4rem 7rem 1rem 8rem;
+  }
+  .home-updates-section .main-button {
+    width: 30%;
+  }
+  .newsletter-signup-section {
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    padding-right: 7rem;
+  }
+  .newsletter-signup-section > div:nth-child(1) {
+    width: 50%;
+    margin: 0 5rem;
+  }
+  .newsletter-signup-section > div:nth-child(2) {
+    width: 50%;
+    margin-top: 0;
+  }
+  footer {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3rem 8rem;
+    padding-right: 0rem;
+  }
+  footer > div:nth-child(4) {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  footer > div:nth-child(5) {
+    grid-area: 1 / 5 / 2 / 6;
+  }
+  .testimonial-section > div:nth-child(2) div {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1536px) {
+  .hero-description h1 {
+    font-size: 3rem;
+  }
+  .hero-description a {
+    font-size: 1.2rem;
+  }
+  .take-action-section .title-div {
+    left: 45%;
+  }
+  .what-we-do-section > div:nth-child(2) {
+    font-size: 30px;
+    margin-left: 3.5rem;
+  }
+  .what-we-do-section .title2-div {
+    margin-left: 5rem;
+  }
+  .home-updates-section-title {
+    font-size: 2.5rem;
+  }
+  .what-we-do-card-container {
+    padding: 0 10rem;
+  }
+  .what-we-do-card > div:nth-child(2) {
+    margin-left: 2rem;
+  }
+  .what-we-do-card > div:nth-child(1) {
+    left: 55px;
+  }
+  .what-we-do-card h3 {
+    font-size: 35px;
+  }
+  .testimonial-section > div:nth-child(2) {
+    left: 21%;
+  }
+  .testimonial-section > div:nth-child(3) {
+    text-align: end;
+    margin-left: 0;
+  }
+  .what-we-do-card > div:nth-child(3) {
+    left: 33px;
+  }
+}
