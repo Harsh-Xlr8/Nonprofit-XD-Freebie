@@ -6,10 +6,13 @@ A free, beautifully designed template for nonprofit organizations, focusing on c
 
 - [Overview](#overview)
 - [Features](#features)
+- [Screenshots](#screenshots)
+- [Links](#links)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [File Structure](#file-structure)
-- [Contributing](#contributing)
+- [Useful Resources](#useful-resources)
+- [Author](#author)
 
 ## Overview
 
@@ -24,10 +27,12 @@ Nonprofit XD Freebie is a website template designed for nonprofits aiming to com
   Secondary-color: rgb(193, 247, 213);
 
 ## Screenshot
+
 ![Project Screenshot1](./screenshots/Screenshot%202024-08-07%20at%202.38.40%20PM.png)
 ![Project Screenshot2](./screenshots/Screenshot%202024-08-07%20at%202.39.00%20PM.png)
 
 ## Links
+
 - [Live Site URL](https://responsive-website-xd.netlify.app/)
 
 ## Getting Started
@@ -112,4 +117,4 @@ Harsh Tiwari
 
 ## Acknowledgments
 
-Thanks to Gangadhar Sir who provide this project and guided me to successful implemention of this project. 
+Thanks to Gangadhar Sir who provide this project and guided me to successful implemention of this project.
